@@ -1,6 +1,6 @@
 //
 // Copyright (C) 4/27/14  Andrew Shmig ( andrewshmig@yandex.ru )
-// Russian Bleeding Games. All rights reserved.
+// Non Atomic Games. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person
 // obtaining a copy of this software and associated documentation
@@ -25,8 +25,8 @@
 //
 
 
-static NSString* const kBGSettingManagerUserDefaultsStoreKeyForMainSettings = @"kBGSettingsManagerUserDefaultsStoreKeyForMainSettings";
-static NSString* const kBGSettingManagerUserDefaultsStoreKeyForDefaultSettings = @"kBGSettingsManagerUserDefaultsStoreKeyForDefaultSettings";
+static NSString *const kBGSettingManagerUserDefaultsStoreKeyForMainSettings = @"kBGSettingsManagerUserDefaultsStoreKeyForMainSettings";
+static NSString *const kBGSettingManagerUserDefaultsStoreKeyForDefaultSettings = @"kBGSettingsManagerUserDefaultsStoreKeyForDefaultSettings";
 
 
 // Class allows to work with app settings in a simple and flexible way.
@@ -44,8 +44,10 @@ static NSString* const kBGSettingManagerUserDefaultsStoreKeyForDefaultSettings =
 // resetToDefaultSettings method is called
 // example: [[BGSettingsManager shared] createDefaultSettingsFromDictionary:@{@"user":@{@"login":@"Andrew", @"password":@"1234"}}]
 - (void)createDefaultSettingsFromDictionary:(NSDictionary *)settings;
+
 // resets main settings to default settings
 - (void)resetToDefaultSettings;
+
 // clears/removes all settings - main and default
 - (void)clear;
 
@@ -55,13 +57,21 @@ static NSString* const kBGSettingManagerUserDefaultsStoreKeyForDefaultSettings =
 
 // return setting value with specified type
 - (id)valueForSettingsPath:(NSString *)settingsPath;
+
 - (BOOL)boolValueForSettingsPath:(NSString *)settingsPath;
+
 - (NSInteger)integerValueForSettingsPath:(NSString *)settingsPath;
+
 - (NSUInteger)unsignedIntegerValueForSettingsPath:(NSString *)settingsPath;
+
 - (CGFloat)floatValueForSettingsPath:(NSString *)settingsPath;
+
 - (NSString *)stringValueForSettingsPath:(NSString *)settingsPath;
+
 - (NSArray *)arrayValueForSettingsPath:(NSString *)settingsPath;
+
 - (NSDictionary *)dictionaryValueForSettingsPath:(NSString *)settingsPath;
+
 - (NSData *)dataValueForSettingsPath:(NSString *)settingsPath;
 
 @end

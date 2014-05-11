@@ -1,6 +1,6 @@
 //
 // Copyright (C) 4/27/14  Andrew Shmig ( andrewshmig@yandex.ru )
-// Russian Bleeding Games. All rights reserved.
+// Non Atomic Games. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person
 // obtaining a copy of this software and associated documentation

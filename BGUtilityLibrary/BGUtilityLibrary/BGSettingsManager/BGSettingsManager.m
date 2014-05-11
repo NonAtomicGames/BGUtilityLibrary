@@ -1,6 +1,6 @@
 //
 // Copyright (C) 4/27/14  Andrew Shmig ( andrewshmig@yandex.ru )
-// Russian Bleeding Games. All rights reserved.
+// Non Atomic Games. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person
 // obtaining a copy of this software and associated documentation
@@ -40,7 +40,8 @@
     static dispatch_once_t once;
     static BGSettingsManager *shared;
 
-    dispatch_once(&once, ^{
+    dispatch_once(&once, ^
+    {
         shared = [[self alloc] init];
         shared->_pathDelimiters = [NSCharacterSet characterSetWithCharactersInString:@"."];
         shared->_throwExceptionForUnknownPath = YES;
@@ -84,7 +85,8 @@
 
     [settingsPathComponents enumerateObjectsUsingBlock:^(id pathComponent,
                                                          NSUInteger idx,
-                                                         BOOL *stop) {
+                                                         BOOL *stop)
+    {
 
         id nextNode = currentNode[pathComponent];
 
@@ -119,7 +121,8 @@
 
     [settingsPathComponents enumerateObjectsUsingBlock:^(id obj,
                                                          NSUInteger idx,
-                                                         BOOL *stop) {
+                                                         BOOL *stop)
+    {
 
 //        we have a nil node for a path component which is not the last one
 //        or a node which is not a leaf node
@@ -220,7 +223,8 @@
 {
     NSMutableDictionary *deepMutableCopy = [settings mutableCopy];
 
-    [settings enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+    [settings enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop)
+    {
         if ([obj isKindOfClass:[NSDictionary class]])
             deepMutableCopy[key] = [self BGPrivateMethod_deepMutableCopy:obj];
         else

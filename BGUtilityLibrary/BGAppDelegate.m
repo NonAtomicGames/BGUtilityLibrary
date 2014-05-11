@@ -3,7 +3,7 @@
 //  BGUtilityLibrary
 //
 //  Created by AndrewShmig on 4/27/14.
-//  Copyright (c) 2014 Bleeding Games. All rights reserved.
+//  Copyright (c) 2014 Non Atomic Games. All rights reserved.
 //
 
 #import "BGAppDelegate.h"
@@ -18,11 +18,11 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     BGSettingsManager *settingsManager = [BGSettingsManager shared];
 
     [settingsManager createDefaultSettingsFromDictionary:@{
-            @"user": @{
-                    @"info":@{
-                            @"name": @"Andrew",
-                            @"surname": @"Shmig",
-                            @"age": @22
+            @"user" : @{
+                    @"info" : @{
+                            @"name"    : @"Andrew",
+                            @"surname" : @"Shmig",
+                            @"age"     : @22
                     }
             }
     }];
