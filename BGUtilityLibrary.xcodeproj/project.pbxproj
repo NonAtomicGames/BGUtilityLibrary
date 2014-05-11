@@ -14,6 +14,7 @@
 		1A9A04D2CC90E894C0538E29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A0202EBE827D779874C46 /* UIKit.framework */; };
 		1A9A0605362E49956DF9555F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A0A9B4CDA9DE498303C3A /* CoreGraphics.framework */; };
 		1A9A0B64042A1E39718674C9 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0673DD111063B5EAB9A3 /* BGAppDelegate.m */; };
+		1A9A0C879E02478C99FBAFE3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0F8AE37DC8C186BCBCC4 /* README.md */; };
 		1A9A0CE6828C6DAA51D46F07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A0202EBE827D779874C46 /* UIKit.framework */; };
 		1A9A0D21F1DCF6C128E29049 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A00A5B34C68058009A95A /* main.m */; };
 		1A9A0E6D02BECA77A82B3927 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A02AFC251055D078470D6 /* Foundation.framework */; };
@@ -47,6 +48,7 @@
 		1A9A0D0B8BB238A7EBAA91E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A9A0E93CCECDD59533ACE9B /* BGUtilityLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGUtilityLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9A0F4C11BDF2DF9915CC0E /* BGUtilityLibrary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "BGUtilityLibrary-Info.plist"; sourceTree = "<group>"; };
+		1A9A0F8AE37DC8C186BCBCC4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				1A9A0CEB090A522770CD1213 /* BGSettingsManager.h */,
 				1A9A076E6FEEF61BA4AA9CFC /* BGSettingsManager.m */,
+				1A9A0F8AE37DC8C186BCBCC4 /* README.md */,
 			);
 			path = BGSettingsManager;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				1A9A02BD59E6F470212AAF92 /* InfoPlist.strings in Resources */,
 				1A9A026039E8D6DFCED02076 /* Images.xcassets in Resources */,
+				1A9A0C879E02478C99FBAFE3 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
